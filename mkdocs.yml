@@ -1,6 +1,8 @@
-site_name: Park & Ride Audit
+site_name: Park & Ride Wrocław. Raport z audytu
+site_url: https://github.com/AviAlex13/park-and-ride-report-Wroclaw
 theme:
   name: material
+  sanitize: false        # ← disable HTML sanitization
   features:
     - navigation.tabs
     - navigation.sections
@@ -9,15 +11,22 @@ theme:
     - content.tabs.link
     - content.action.edit
     - content.action.view
+
 markdown_extensions:
-  - tables
-  - admonition
+  - markdown.extensions.extra        # raw HTML, fenced code, footnotes, etc.
+  - markdown.extensions.admonition
+  - markdown.extensions.tables
+  - markdown.extensions.attr_list
+  - pymdownx.extra
   - toc:
       permalink: true
 
+plugins:
+  - search
+
 nav:
-  - Home: index.md
-  - Methodology:
-      - Data Collection: methodology/data-collection.md
-  - Tables:
-      - Summary Table: tables/summary-table.md
+  - Wstęp: Wstep-do-raportu.md
+  - Treść: Tresc.md
+      
+extra_css:
+  - css/main.css

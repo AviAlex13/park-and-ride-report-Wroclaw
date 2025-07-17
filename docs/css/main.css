@@ -1,0 +1,20 @@
+/* 1) Ensure images keep their aspect ratio */
+.md-content img {
+  height: auto;
+}
+
+/* 2) Turn every image in a multi‑image paragraph into an inline‑block “cell” */
+.md-content > p img {
+  display: inline-block;
+  width: calc(33.333% - 1rem);   /* 3 columns by default, minus gap */
+  margin: 0.5rem;                /* gap around each image */
+  vertical-align: top;
+}
+
+/* 3) On narrower screens, stack into 1 column */
+@media (max-width: 600px) {
+  .md-content > p img {
+    width: 100%;
+    margin: 0 0 1rem;           /* more vertical breathing room */
+  }
+}
