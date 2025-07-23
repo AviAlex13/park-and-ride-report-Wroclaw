@@ -1,9 +1,10 @@
-/* 1) Ensure images keep their aspect ratio */
+/*IMAGES*/
+    /* 1) Ensure images keep their aspect ratio */
 .md-content img {
   height: auto;
 }
 
-/* 2) Turn every image in a multi‑image paragraph into an inline‑block “cell” */
+    /* 2) Turn every image in a multi‑image paragraph into an inline‑block “cell” */
 .md-content > p img {
   display: inline-block;
   width: calc(33.333% - 1rem);   /* 3 columns by default, minus gap */
@@ -11,10 +12,45 @@
   vertical-align: top;
 }
 
-/* 3) On narrower screens, stack into 1 column */
+    /* 3) On narrower screens, stack into 1 column */
 @media (max-width: 600px) {
   .md-content > p img {
     width: 100%;
     margin: 0 0 1rem;           /* more vertical breathing room */
   }
 }
+
+/*TABLES*/
+.table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.ritz .waffle {
+  width: 100%;
+  table-layout: fixed;    /* switch back to auto, or fixed + colgroup widths */
+  border-collapse: collapse; 
+}
+
+.ritz .waffle td,
+.ritz .waffle th {
+  box-sizing: border-box;   /* padding & borders inside width */
+  white-space: nowrap;      
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1px 3px;         /* tighter vertically */
+  line-height: 1.2;         
+}
+
+.ritz .waffle tr {
+  height: auto !important;            /* let content dictate */
+  min-height: 20px;        /* if you really want a floor */
+}
+
+.ritz .waffle th.wide,
+.ritz .waffle td.wide {
+  width: 450px !important;
+  white-space: normal;
+}
+
+/* existing .s0–.s4 rules still apply */

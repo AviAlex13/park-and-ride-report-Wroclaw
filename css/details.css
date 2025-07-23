@@ -1,0 +1,58 @@
+/* ——————————————————————————————————————————
+   Base styles & marker removal
+   ——————————————————————————————————————————*/
+
+/* Reset default disclosure and list markers */
+details summary::marker,
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Base <details> container */
+details {
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  transition: background 0.3s ease;
+}
+
+/* <summary> layout & interaction */
+details summary {
+  list-style: none;
+  display: flex;
+  align-items: center;    /* vertically center children */
+  gap: 0.5em;             /* space between icon & text */
+  cursor: pointer;
+}
+
+/* Custom icon placeholder */
+details summary::before {
+  content: "";
+  font-size: 1.2em;
+  line-height: 1;
+  /* no absolute positioning needed */
+}
+
+/* ——————————————————————————————————————————
+   Variant theming
+   ——————————————————————————————————————————*/
+
+/* Camera sections */
+details.camera {
+  background: #fff9e6;
+  border-left: 4px solid #f0ad4e;
+}
+details.camera summary::before {
+  content: "📷";
+}
+
+/* Notes sections */
+details.notes {
+  background: #e6f9f0;
+  border-left: 4px solid #5cb85c;
+}
+details.notes summary::before {
+  content: "📝";
+}
