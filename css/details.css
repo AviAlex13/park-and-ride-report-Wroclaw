@@ -22,14 +22,14 @@ details {
 details summary {
   list-style: none;
   display: flex;
-  align-items: center;    /* vertically center children */
-  gap: 0.5em;             /* space between icon & text */
+  align-items: center; /* vertically center children */
+  gap: 0.5em; /* space between icon & text */
   cursor: pointer;
 }
 
 /* Custom icon placeholder */
 details summary::before {
-  content: "";
+  content: '';
   font-size: 1.2em;
   line-height: 1;
   /* no absolute positioning needed */
@@ -43,16 +43,18 @@ details summary::before {
 details.camera {
   background: #fff9e6;
   border-left: 4px solid #f0ad4e;
+  font-size: medium;
 }
 details.camera summary::before {
-  content: "📷";
+  content: '📷';
 }
 
 /* Notes sections */
 details.notes {
   background: #e6f9f0;
   border-left: 4px solid #5cb85c;
+  font-size: medium;
 }
 details.notes summary::before {
-  content: "📝";
+  content: '📝';
 }
