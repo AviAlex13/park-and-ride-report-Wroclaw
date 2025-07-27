@@ -1,56 +1,137 @@
 /*IMAGES*/
-    /* 1) Ensure images keep their aspect ratio */
+
+/* 1) Ensure images keep their aspect ratio */
 .md-content img {
   height: auto;
 }
 
-    /* 2) Turn every image in a multi‑image paragraph into an inline‑block “cell” */
+/* 2) Turn every image in a multi‑image paragraph into an inline‑block “cell” */
 .md-content > p img {
   display: inline-block;
-  width: calc(33.333% - 1rem);   /* 3 columns by default, minus gap */
-  margin: 0.5rem;                /* gap around each image */
+  width: calc(33.333% - 1rem); /* 3 columns by default, minus gap */
+  margin: 0.5rem; /* gap around each image */
   vertical-align: top;
 }
 
-    /* 3) On narrower screens, stack into 1 column */
+/* 3) On narrower screens, stack into 1 column */
 @media (max-width: 600px) {
   .md-content > p img {
     width: 100%;
-    margin: 0 0 1rem;           /* more vertical breathing room */
+    margin: 0 0 1rem; /* more vertical breathing room */
   }
 }
 
 /*TABLES*/
+
 .table-wrapper {
-  overflow-x: auto;
-  max-width: 100%;
+  overflow: auto;
+  width: 100%;
+  max-height: 90vh;
+  position: relative;
 }
 
 .ritz .waffle {
   width: 100%;
-  table-layout: fixed;    /* switch back to auto, or fixed + colgroup widths */
-  border-collapse: collapse; 
+  table-layout: fixed; /* switch back to auto, or fixed + colgroup widths */
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
+/* Freeze header row */
+.waffle thead th {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+
+/* Freeze first column */
+.waffle tbody td.s2[rowspan],
+.waffle thead th.s2 {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 5;
+}
+
+/* Ensure top-left cell stays above all */
+.waffle thead tr:first-child th:first-child {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+/* Body cells: default stacking */
+.ritz .waffle tbody td,
+.ritz .waffle tbody th {
+  position: static; /* default flow */
+  z-index: auto;
+}
+
+/* Other cell‑formatting rules */
 .ritz .waffle td,
 .ritz .waffle th {
-  box-sizing: border-box;   /* padding & borders inside width */
-  white-space: nowrap;      
-  overflow: hidden;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: auto;
   text-overflow: ellipsis;
-  padding: 1px 3px;         /* tighter vertically */
-  line-height: 1.2;         
+  padding: 1px 3px;
+  line-height: 1.2;
 }
 
 .ritz .waffle tr {
-  height: auto !important;            /* let content dictate */
-  min-height: 20px;        /* if you really want a floor */
+  height: auto !important; /* let content dictate */
+  min-height: 20px; /* if you really want a floor */
 }
 
 .ritz .waffle th.wide,
 .ritz .waffle td.wide {
   width: 450px !important;
   white-space: normal;
+  overflow: auto;
+  text-overflow: ellipsis;
 }
 
 /* existing .s0–.s4 rules still apply */
+
+/* Filter row styles */
+/*.ritz .waffle .filter-row input {
+  width: 100%;
+  padding: 2px 4px;
+  box-sizing: border-box;
+  font-size: 10pt;
+}
+*/
+
+/*PAGE*/
+
+.md-header {
+  z-index: 20; /* ensure it stays above other content */
+}
+
+.md-header--shadow {
+  box-shadow: none; /* remove default shadow */
+  z-index: 20; /* ensure it stays above other content */
+}
+
+.md-tabs {
+  position: fixed; /* ensure it doesn’t collapse */
+  z-index: 19; /* ensure it stays above other content */
+}
+
+.md-tabs[hidden] {
+  pointer-events: initial; /* allow clicks to pass through */
+  position: fixed; /* ensure it doesn’t collapse */
+  z-index: 19; /* ensure it stays above other content */
+}
+
+.md-tabs[hidden] .md-tabs__link {
+  opacity: 0.7; /* ensure links are visible */
+  pointer-events: initial; /* allow clicks to pass through */
+  transform: translateY(0);
+}
+
+.md-tabs[hidden] .md-tabs__link:hover {
+  opacity: 1; /* ensure links are visible on hover */
+}

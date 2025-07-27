@@ -14,6 +14,8 @@
         <link rel="prev" href="../Metoda/">
       
       
+        <link rel="next" href="../Table2/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
@@ -246,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Table2.md" class="md-tabs__link">
+      <a href="../Table2/" class="md-tabs__link">
         
   
   
@@ -397,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Table2.md" class="md-nav__link">
+      <a href="../Table2/" class="md-nav__link">
         
   
   
@@ -430,7 +432,85 @@
 
   <h1>Ranking P&R</h1>
 
-<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .s4{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#000000;font-family:Arial;font-size:10pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s3{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:Arial;font-size:10pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s0{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:Arial;font-size:10pt;font-weight:bold;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#afafff;text-align:center;color:#000000;font-family:Arial;font-size:10pt;font-weight:bold;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s2{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#000000;font-family:Arial;font-size:10pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style>
+<style type="text/css">
+  .ritz .waffle a {
+    color: inherit;
+  }
+  .ritz .waffle .s4 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: Arial;
+    font-size: 10pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s3 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: Arial;
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s0 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    vertical-align: middle;
+    white-space: wrap;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s1 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #afafff;
+    text-align: center;
+    color: #000000;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+    vertical-align: middle;
+    white-space: wrap;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s2 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: Arial;
+    font-size: 10pt;
+    vertical-align: middle;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+</style>
 <div class="ritz grid-container" dir="ltr">
 <div class="table-wrapper">
 <table class="waffle" cellspacing="0" cellpadding="0">
@@ -440,7 +520,7 @@
         <col style="width: 100px;">
         <col style="width: 100px;">
         <col style="width: 100px;">
-        <col class="wide" style="min-width:450px;">
+        <col style="min-width:350px;">
         <col style="width: 100px;">
         <col style="width: 100px;">
         <col style="width: 100px;">
@@ -466,35 +546,99 @@
 </colgroup>
 <thead>
 <tr>
-<th class="s0" dir="ltr">Nazwa P+R</th>
-<th class="s0" dir="ltr">Liczba rodzajów transportu</th>
-<th class="s0" dir="ltr">Liczba linii komunikacji zbiorowej</th>
-<th class="s0" dir="ltr">Liczba linii jadących przez centrum</th>
-<th class="s0" dir="ltr">Numer linii komunikacji zbiorowej</th>
-<th class="s0 wide" dir="ltr">Trasa jazdy komunikacji zbiorowej</th>
-<th class="s0" dir="ltr">Odległość (uśredniona) od przystanków, m</th>
-<th class="s0" dir="ltr">Częstotliwość (uśredniona) kursowania w szczycie, min</th>
-<th class="s0" dir="ltr">Czas dojazdu (uśredniony) do centrum, min</th>
-<th class="s0" dir="ltr">Wjazd na Urban Card (deklarowany)</th>
-<th class="s0" dir="ltr">Wjazd na Urban Card (faktyczny)</th>
-<th class="s0" dir="ltr">Liczba miejsc parkingowych (faktyczna)</th>
-<th class="s0" dir="ltr">Liczba miejsc parkingowych (deklarowanych)</th>
-<th class="s0" dir="ltr">Ocena bliskości głównych dróg dojazdowych do miasta</th>
-<th class="s0" dir="ltr">Ocena zapotrzebowania w regionie</th>
-<th class="s0" dir="ltr">Ocena możliwości dojazdu rowerem</th>
-<th class="s0" dir="ltr">Ocena liczby miejsc parkingowych względem zapotrzebowania</th>
-<th class="s1" dir="ltr">Podsumowująca ocena lokalizacji</th>
-<th class="s0" dir="ltr">Wskaźnik komunikacyjnej atrakcyjności</th>
-<th class="s0" dir="ltr">Ocena częstotliwości kursowania w szczycie</th>
-<th class="s0" dir="ltr">Uśredniona ocena częstotliwości kursowania w szczycie</th>
-<th class="s0" dir="ltr">Ocena czasu dojazdu do centrum</th>
-<th class="s0" dir="ltr">Uśredniona ocena czasu dojazdu do centrum</th>
-<th class="s0" dir="ltr">Ocena odłegłości do najbliższego przystanku</th>
-<th class="s0" dir="ltr">Uśredniona ocena odłegłości do najbliższego przystanku</th>
-<th class="s1" dir="ltr">Podsumowująca ocena połączenia komunikacyjnego</th>
-<th class="s0" dir="ltr">Kwota inwestycji</th>
-<th class="s0" dir="ltr">Koszt 1 miejsca parkingowego</th>
+<th class="s0" dir="ltr">Nazwa P+R<br>(A)</th>
+<th class="s0" dir="ltr">Liczba rodzajów transportu<br>(B)</th>
+<th class="s0" dir="ltr">Liczba linii komunikacji zbiorowej<br>(C)</th>
+<th class="s0" dir="ltr">Liczba linii jadących przez centrum<br>(D)</th>
+<th class="s0" dir="ltr">Numer linii komunikacji zbiorowej<br>(E)</th>
+<th class="s0 wide" dir="ltr">Trasa jazdy komunikacji zbiorowej<br>(F)</th>
+<th class="s0" dir="ltr">Odległość (uśredniona) od przystanków, m<br>(G)</th>
+<th class="s0" dir="ltr">Częstotliwość (uśredniona) kursowania w szczycie, min<br>(H)</th>
+<th class="s0" dir="ltr">Czas dojazdu (uśredniony) do centrum, min<br>(I)</th>
+<th class="s0" dir="ltr">Wjazd na Urban Card (deklarowany)<br>(J)</th>
+<th class="s0" dir="ltr">Wjazd na Urban Card (faktyczny)<br>(K)</th>
+<th class="s0" dir="ltr">Liczba miejsc parkingowych (faktyczna)<br>(L)</th>
+<th class="s0" dir="ltr">Liczba miejsc parkingowych (deklarowanych)<br>(M)</th>
+<th class="s0" dir="ltr">Ocena bliskości głównych dróg dojazdowych do miasta<br>(N)</th>
+<th class="s0" dir="ltr">Ocena zapotrzebowania w regionie<br>(O)</th>
+<th class="s0" dir="ltr">Ocena możliwości dojazdu rowerem<br>(P)</th>
+<th class="s0" dir="ltr">Ocena liczby miejsc parkingowych względem zapotrzebowania<br>(Q)</th>
+<th class="s1" dir="ltr">Podsumowująca ocena lokalizacji<br>(R)</th>
+<th class="s0" dir="ltr">Wskaźnik komunikacyjnej atrakcyjności<br>(S)</th>
+<th class="s0" dir="ltr">Ocena częstotliwości kursowania w szczycie<br>(T)</th>
+<th class="s0" dir="ltr">Uśredniona ocena częstotliwości kursowania w szczycie<br>(U)</th>
+<th class="s0" dir="ltr">Ocena czasu dojazdu do centrum<br>(V)</th>
+<th class="s0" dir="ltr">Uśredniona ocena czasu dojazdu do centrum<br>(W)</th>
+<th class="s0" dir="ltr">Ocena odłegłości do najbliższego przystanku<br>(X)</th>
+<th class="s0" dir="ltr">Uśredniona ocena odłegłości do najbliższego przystanku<br>(Y)</th>
+<th class="s1" dir="ltr">Podsumowująca ocena połączenia komunikacyjnego<br>(Z)</th>
+<th class="s0" dir="ltr">Kwota inwestycji<br>(AA)</th>
+<th class="s0" dir="ltr">Koszt 1 miejsca parkingowego<br>(AB)</th>
 </tr>
+<!--
+<tr>
+<th class="s0" dir="ltr">A</th>
+<th class="s0" dir="ltr">B</th>
+<th class="s0" dir="ltr">C</th>
+<th class="s0" dir="ltr">D</th>
+<th class="s0" dir="ltr">E</th>
+<th class="s0 wide" dir="ltr">F</th>
+<th class="s0" dir="ltr">G</th>
+<th class="s0" dir="ltr">H</th>
+<th class="s0" dir="ltr">I</th>
+<th class="s0" dir="ltr">J</th>
+<th class="s0" dir="ltr">K</th>
+<th class="s0" dir="ltr">L</th>
+<th class="s0" dir="ltr">M</th>
+<th class="s0" dir="ltr">N</th>
+<th class="s0" dir="ltr">O</th>
+<th class="s0" dir="ltr">P</th>
+<th class="s0" dir="ltr">Q</th>
+<th class="s1" dir="ltr">R</th>
+<th class="s0" dir="ltr">S</th>
+<th class="s0" dir="ltr">T</th>
+<th class="s0" dir="ltr">U</th>
+<th class="s0" dir="ltr">V</th>
+<th class="s0" dir="ltr">W</th>
+<th class="s0" dir="ltr">X</th>
+<th class="s0" dir="ltr">Y</th>
+<th class="s1" dir="ltr">Z</th>
+<th class="s0" dir="ltr">AA</th>
+<th class="s0" dir="ltr">AB</th>
+</tr>
+-->
+<!--
+<tr class="filter-row">
+    <th><input class="s0" type="text" data-col="0" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="1" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="2" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="3" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="4" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="5" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="6" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="7" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="8" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="9" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="10" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="11" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="12" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="13" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="14" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="15" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="16" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="17" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="18" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="19" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="20" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="21" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="22" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="23" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="24" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="25" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="26" placeholder="Filtruj"></th>
+    <th><input class="s0" type="text" data-col="27" placeholder="Filtruj"></th>
+</tr>
+-->
 </thead>
 <tbody>
 <tr>
@@ -926,8 +1070,8 @@
 <td class="s3">4</td>
 <td class="s3" rowspan="16">3</td>
 <td class="s3" rowspan="16">3</td>
-<td class="s0" dir="ltr" rowspan="16">faktycznie nie wybudowany</td>
-<td class="s0" dir="ltr" rowspan="16">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="16">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="16">faktycznie nie wybudowany</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">3</td>
@@ -1128,8 +1272,8 @@
 <td class="s3">4</td>
 <td class="s3" rowspan="6">4</td>
 <td class="s3" rowspan="6">3</td>
-<td class="s0" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
-<td class="s0" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">107</td>
@@ -1214,8 +1358,8 @@
 <td class="s3">4</td>
 <td class="s3" rowspan="4">4</td>
 <td class="s3" rowspan="4">3</td>
-<td class="s0" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
-<td class="s0" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">114</td>
@@ -1276,8 +1420,8 @@
 <td class="s3">5</td>
 <td class="s3" rowspan="4">4</td>
 <td class="s3" rowspan="4">2</td>
-<td class="s0" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
-<td class="s0" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="4">faktycznie nie wybudowany</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">101</td>
@@ -1340,8 +1484,8 @@
 <td class="s3">5</td>
 <td class="s3" rowspan="6">4</td>
 <td class="s3" rowspan="6">2</td>
-<td class="s0" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
-<td class="s0" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="6">faktycznie nie wybudowany</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">128</td>
@@ -1428,8 +1572,8 @@
 <td class="s3">5</td>
 <td class="s3" rowspan="3">4</td>
 <td class="s3" rowspan="3">2</td>
-<td class="s0" dir="ltr" rowspan="3">faktycznie nie wybudowany</td>
-<td class="s0" dir="ltr" rowspan="3">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="3">faktycznie nie wybudowany</td>
+<td class="s3" dir="ltr" rowspan="3">faktycznie nie wybudowany</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">151</td>
@@ -1482,8 +1626,8 @@
 <td class="s3">3</td>
 <td class="s3" rowspan="9">2</td>
 <td class="s3" rowspan="9">3</td>
-<td class="s0" dir="ltr" rowspan="9">brak informacji</td>
-<td class="s0" dir="ltr" rowspan="9">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="9">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="9">brak informacji</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">14</td>
@@ -1604,8 +1748,8 @@
 <td class="s3">5</td>
 <td class="s3" rowspan="3">4</td>
 <td class="s3" rowspan="3">2</td>
-<td class="s0" dir="ltr" rowspan="3">brak informacji</td>
-<td class="s0" dir="ltr" rowspan="3">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="3">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="3">brak informacji</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">115</td>
@@ -1658,8 +1802,8 @@
 <td class="s3">4</td>
 <td class="s3" rowspan="4">3</td>
 <td class="s3" rowspan="4">2</td>
-<td class="s0" dir="ltr" rowspan="4">brak informacji</td>
-<td class="s0" dir="ltr" rowspan="4">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="4">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="4">brak informacji</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">115</td>
@@ -2134,8 +2278,8 @@
 <td class="s3">5</td>
 <td class="s3" rowspan="13">4</td>
 <td class="s3" rowspan="13">3</td>
-<td class="s0" dir="ltr" rowspan="13">brak informacji</td>
-<td class="s0" dir="ltr" rowspan="13">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="13">brak informacji</td>
+<td class="s3" dir="ltr" rowspan="13">brak informacji</td>
 </tr>
 <tr>
 <td class="s3" dir="ltr">5</td>
@@ -3927,6 +4071,38 @@
 </table>
 </div>
 </div>
+
+<!--
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const inputs = document.querySelectorAll(".filter-row input");
+  const table = document.querySelector("table.waffle");
+  const rows = table.querySelectorAll("tbody tr");
+
+  inputs.forEach(input => {
+    input.addEventListener("input", () => {
+      const filters = Array.from(inputs).map(i => i.value.trim().toLowerCase());
+
+      rows.forEach(row => {
+        const cells = row.querySelectorAll("td");
+        let show = true;
+
+        filters.forEach((filter, i) => {
+          if (filter && cells[i]) {
+            const cellText = cells[i].textContent.trim().toLowerCase();
+            if (!cellText.includes(filter)) {
+              show = false;
+            }
+          }
+        });
+
+        row.style.display = show ? "" : "none";
+      });
+    });
+  });
+});
+</script>
+-->
 
 
 
