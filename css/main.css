@@ -135,3 +135,11 @@
 .md-tabs[hidden] .md-tabs__link:hover {
   opacity: 1; /* ensure links are visible on hover */
 }
+
+.md-sidebar {
+  z-index: 18; /* ensure sidebar is visible on small screens e.g. phones */
+}
+
+.md-overlay {
+  z-index: 16; /* semi-transparent overlay on small screens should be higher than any content on the page */
+}
